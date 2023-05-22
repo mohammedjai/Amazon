@@ -9,7 +9,7 @@ import pandas as pd
 website = "https://www.amazon.com/s?k=shoes&i=fashion-mens-intl-ship&crid=2AQQ0F5VA08X&sprefix=sh%2Cfashion-mens-intl-ship%2C442&ref=nb_sb_ss_ts-doa-p_1_2"
 
 header = ({"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36","Accept-Language":"ar-MA,ar;q=0.9,en-US;q=0.8,en;q=0.7","Accept-Encoding":"gzip, deflate, br"})
-
+#send request
 r = requests.get(website, headers=header)
 
 
@@ -63,13 +63,10 @@ for info in pack :
         rating_count.append(info.find("span", {"class":"a-size-base s-underline-text"}).text)
     except :
         print("n/a")
-
-    print((name))
- 
- 
-
-
     
+print("hello world")
+
+
 
 
 
