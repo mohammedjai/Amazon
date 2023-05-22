@@ -62,12 +62,9 @@ for info in pack :
     try :
         rating_count.append(info.find("span", {"class":"a-size-base s-underline-text"}).text)
     except :
+    
         print("n/a")
     
-print("hello world")
-
-
-
 
 
 
